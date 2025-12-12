@@ -38,9 +38,6 @@ def init_db():
     conn.close()
 
 
-# -----------------------------
-# ОПЕРАЦІЇ ЗІ СТУДЕНТАМИ
-# -----------------------------
 def add_student():
     name = input("Ім'я студента: ")
     age = int(input("Вік студента: "))
@@ -88,9 +85,7 @@ def edit_student():
     print("Дані оновлено!\n")
 
 
-# -----------------------------
-# ОПЕРАЦІЇ З КУРСАМИ
-# -----------------------------
+
 def add_course():
     course_name = input("Назва курсу: ")
     instructor = input("Викладач: ")
@@ -115,9 +110,7 @@ def view_courses():
     print()
 
 
-# -----------------------------
-# MANY-TO-MANY: реєстрація студентів на курси
-# -----------------------------
+
 def register_student_to_course():
     student_id = input("ID студента: ")
     course_id = input("ID курсу: ")
@@ -152,9 +145,6 @@ def view_students_in_course():
     print()
 
 
-# -----------------------------
-# МЕНЮ
-# -----------------------------
 def menu():
     init_db()
 
